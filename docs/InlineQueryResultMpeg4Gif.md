@@ -1,0 +1,44 @@
+# TelegramBotOpenapi::InlineQueryResultMpeg4Gif
+
+## Properties
+
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
+| **type** | **String** | Type of the result, must be mpeg4_gif |  |
+| **id** | **String** | Unique identifier for this result, 1-64 bytes |  |
+| **mpeg4_url** | **String** | A valid URL for the MPEG4 file. File size must not exceed 1MB |  |
+| **mpeg4_width** | **Integer** | Optional. Video width | [optional] |
+| **mpeg4_height** | **Integer** | Optional. Video height | [optional] |
+| **mpeg4_duration** | **Integer** | Optional. Video duration in seconds | [optional] |
+| **thumbnail_url** | **String** | URL of the static (JPEG or GIF) or animated (MPEG4) thumbnail for the result |  |
+| **thumbnail_mime_type** | **String** | Optional. MIME type of the thumbnail, must be one of \&quot;image/jpeg\&quot;, \&quot;image/gif\&quot;, or \&quot;video/mp4\&quot;. Defaults to \&quot;image/jpeg\&quot; | [optional] |
+| **title** | **String** | Optional. Title for the result | [optional] |
+| **caption** | **String** | Optional. Caption of the MPEG-4 file to be sent, 0-1024 characters after entities parsing | [optional] |
+| **parse_mode** | **String** | Optional. Mode for parsing entities in the caption. See formatting options for more details. | [optional] |
+| **caption_entities** | [**Array&lt;MessageEntity&gt;**](MessageEntity.md) | Optional. List of special entities that appear in the caption, which can be specified instead of parse_mode | [optional] |
+| **reply_markup** | [**InlineKeyboardMarkup**](InlineKeyboardMarkup.md) | Optional. Inline keyboard attached to the message | [optional] |
+| **input_message_content** | **Object** | Optional. Content of the message to be sent instead of the video animation | [optional] |
+
+## Example
+
+```ruby
+require 'telegram-bot-openapi'
+
+instance = TelegramBotOpenapi::InlineQueryResultMpeg4Gif.new(
+  type: null,
+  id: null,
+  mpeg4_url: null,
+  mpeg4_width: null,
+  mpeg4_height: null,
+  mpeg4_duration: null,
+  thumbnail_url: null,
+  thumbnail_mime_type: null,
+  title: null,
+  caption: null,
+  parse_mode: null,
+  caption_entities: null,
+  reply_markup: null,
+  input_message_content: null
+)
+```
+
